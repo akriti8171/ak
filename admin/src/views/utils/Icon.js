@@ -8,3 +8,13 @@ export const sideBarIcon =[
     "large setting icon",
     "huge trash alternate icon"
 ]
+
+export const settingIcon =[
+    "huge shield icon",
+    "huge chess knight icon",
+    "huge puzzle piece icon",
+    "huge laptop icon",
+    "huge chart bar icon",
+    "huge file alternate icon",
+    "huge lock icon",
+]
