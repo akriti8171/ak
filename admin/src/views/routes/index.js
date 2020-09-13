@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import homePage from '../pages/homePage'
 import FlexDirection from "../styled/FlexDirection";
+import DashBoard from '../pages/dashboard'
 class App extends Component {
     state = {
         loading: true
@@ -17,6 +18,7 @@ class App extends Component {
             <FlexDirection>
                 <Switch>
                     <Route  path="/mark" component={homePage} />
+                    <Route path ="/dashboard" component={DashBoard}/>
                 </Switch>   
             </FlexDirection>
         );

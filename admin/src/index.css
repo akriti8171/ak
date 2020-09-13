@@ -3,11 +3,11 @@ body,
 #root,
 #root > div {
   height: 100%;
-  background-color: #f4f9fa;
+  background-color: #FFFFFF;
 }
 
 body {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 * {
