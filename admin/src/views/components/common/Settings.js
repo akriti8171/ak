@@ -5,6 +5,10 @@ import { Container } from "semantic-ui-react"
 import { settingIcon } from "../../utils/Icon"
 
 class Settings extends Component {
+    constructor(props) {
+        super()
+    
+    }
     render() {
         return (
             <Fragment>
@@ -20,7 +24,7 @@ class Settings extends Component {
                             <i className={`${settingIcon[1]} setting-icon`} ><h2>Tags</h2></i>
                         </div>
                         <div className="icon-box">
-                            <i className={`${settingIcon[2]} setting-icon`} ><h2>Dialogues</h2></i>
+                            <i className={`${settingIcon[2]} setting-icon`}><h2>Dialogues</h2></i>
                         </div>
                         <div className="icon-box">
                             <i className={`${settingIcon[3]} setting-icon`} ><h2>Intents</h2></i>
@@ -34,11 +38,9 @@ class Settings extends Component {
                         <div className="icon-box">
                             <i className={`${settingIcon[6]} setting-icon`} ><h2>Permission</h2></i>
                         </div>
-
                     </Container>
                 </SettingsStyle>
             </Fragment>
-
         )
     }
 }

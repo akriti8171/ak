@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import homePage from '../pages/homePage'
 import FlexDirection from "../styled/FlexDirection";
 import DashBoard from '../pages/dashboard'
+import Dialogue from '../pages/Dialogue'
 class App extends Component {
     state = {
         loading: true
@@ -19,6 +20,7 @@ class App extends Component {
                 <Switch>
                     <Route  path="/mark" component={homePage} />
                     <Route path ="/dashboard" component={DashBoard}/>
+                    <Route path ="/dialogue" component={Dialogue}/>
                 </Switch>   
             </FlexDirection>
         );

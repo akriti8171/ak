@@ -9,7 +9,7 @@ class NavBar extends Component {
         console.log(this.props, 'this')
         const { pageType } = this.props
         // console.log(pageType, 'pageType')
-         const pageName=   (!pageType) ? "Dashboard" : pageType
+         const pageName=   (!pageType) ? " Dashboard" : pageType
         return (
             <Fragment>
                 <NavBarStyle>

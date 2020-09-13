@@ -18,3 +18,7 @@ export const settingIcon =[
     "huge file alternate icon",
     "huge lock icon",
 ]
+
+export const dialogueIcon =[
+    "small dot circle icon"
+]
