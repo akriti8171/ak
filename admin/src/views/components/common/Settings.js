@@ -10,6 +10,12 @@ import { withRouter } from 'react-router-dom';
 class Settings extends Component {
     constructor(props) {
         super()
+        console.log('what is props ',history)
+
+
+    }
+    handleDialoge() {
+        history.push('/dialogue')
 
     }
     render() {
@@ -27,7 +33,7 @@ class Settings extends Component {
                             <i className={`${settingIcon[1]} setting-icon`} ><h2>Tags</h2></i>
                         </div>
                         <div className="icon-box">
-                            <i className={`${settingIcon[2]} setting-icon`} onClick={()=>history.push('/dialogue')}><h2>Dialogues</h2></i>
+                            <i className={`${settingIcon[2]} setting-icon`} onClick={(e) => this.handleDialoge(e)}><h2>Dialogues</h2></i>
                         </div>
                         <div className="icon-box">
                             <i className={`${settingIcon[3]} setting-icon`} ><h2>Intents</h2></i>
@@ -47,4 +53,4 @@ class Settings extends Component {
         )
     }
 }
-export default (withRouter(Settings))
+export default withRouter(Settings)

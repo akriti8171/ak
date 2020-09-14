@@ -3,8 +3,12 @@ import React, { Component } from "react";
 import StyledHeaderBasic from "../styled/Header";
 import SideBar from "./common/SideBar"
 import NavBar from "./common/NavBar"
+import { withRouter } from 'react-router-dom';
 
 class Dashboard extends Component {
+
+
+  
   render() {
     console.log('dahsiboard')
     return (
@@ -16,4 +20,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default  withRouter(Dashboard);

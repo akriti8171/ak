@@ -11,6 +11,8 @@ import ReactPaginate from 'react-paginate';
 import { withRouter } from 'react-router-dom';
 class Dialogue extends Component {
     constructor(props) {
+        console.log('before approce')
+        // window.location.reload()
         super()
         this.state = {
             offSet: 0,

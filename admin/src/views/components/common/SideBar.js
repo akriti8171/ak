@@ -3,6 +3,7 @@ import { SideBarStyle } from '../../styled/SideBar';
 import { sideBarIcon } from '../../utils/Icon'
 import NavBar from './NavBar';
 import Settings from './Settings'
+import { withRouter } from 'react-router-dom';
 
 class SideBar extends Component {
     constructor() {
@@ -40,4 +41,4 @@ class SideBar extends Component {
         )
     }
 }
-export default SideBar
+export default withRouter(SideBar)

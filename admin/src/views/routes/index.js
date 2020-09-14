@@ -12,10 +12,15 @@ class App extends Component {
     };
     componentDidMount() {
         history.listen(({ action, location }) => {
+            console.log('location',location)
             console.log(
                 `The current URL is ${location.pathname}${location.search}${location.hash}`
             );
             console.log(`The last navigation action was ${action}`);
+            console.log('action type')
+            if(action==='PUSH'){
+                  window.location.reload()
+            }
         });
     
     
@@ -29,6 +34,7 @@ class App extends Component {
             <FlexDirection>
                 <Router history={history}>
                     <Switch>
+                    {/* <Redirect exact from="/" to="/dashboard" /> */}
                         <Route path="/mark" component={homePage} />
                         <Route path="/dashboard" component={DashBoard} />
                         <Route path="/dialogue" component={Dialogue} />

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StyledHeaderBasic from "../styled/DashBoard";
+import { withRouter } from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
@@ -12,4 +13,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default withRouter(HomePage);

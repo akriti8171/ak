@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { NavBarStyle } from '../../styled/NavBar';
 // import { NavLink } from "react-router-dom";
 // import { Menu } from "semantic-ui-react"
+import { withRouter } from 'react-router-dom';
 
 class NavBar extends Component {
 
@@ -25,4 +26,4 @@ class NavBar extends Component {
         )
     }
 }
-export default NavBar
+export default withRouter(NavBar)
