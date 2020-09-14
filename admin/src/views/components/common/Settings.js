@@ -4,6 +4,8 @@ import { SettingsStyle } from '../../styled/Settings';
 import { Container } from "semantic-ui-react"
 import { settingIcon } from "../../utils/Icon"
 import history from '../../../history'
+// import { Link,Router } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Settings extends Component {
     constructor(props) {
@@ -25,7 +27,7 @@ class Settings extends Component {
                             <i className={`${settingIcon[1]} setting-icon`} ><h2>Tags</h2></i>
                         </div>
                         <div className="icon-box">
-                            <i className={`${settingIcon[2]} setting-icon`} onClick={() =>history.push('/dialogue')}><h2>Dialogues</h2></i>
+                            <i className={`${settingIcon[2]} setting-icon`} onClick={()=>history.push('/dialogue')}><h2>Dialogues</h2></i>
                         </div>
                         <div className="icon-box">
                             <i className={`${settingIcon[3]} setting-icon`} ><h2>Intents</h2></i>
@@ -45,4 +47,4 @@ class Settings extends Component {
         )
     }
 }
-export default Settings
+export default (withRouter(Settings))

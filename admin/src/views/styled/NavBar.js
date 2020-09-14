@@ -25,9 +25,10 @@ export const NavBarStyle = styled.div`
 .Nav-bar h2{
     position:relative;
     top:10px;
-    left:10px;
+    left:25px;
     font-size:medium;
     font-weight:lighter;
+    // color:red
 
 }
 .admin-icon{

@@ -8,6 +8,7 @@ import { productDetails } from '../../../state'
 import { connect } from 'react-redux'
 import { Table, Icon } from 'semantic-ui-react'
 import ReactPaginate from 'react-paginate';
+import { withRouter } from 'react-router-dom';
 class Dialogue extends Component {
     constructor(props) {
         super()
@@ -127,11 +128,7 @@ class Dialogue extends Component {
 
                                                 </Table.Row>)
 
-                                            })
-
-
-                                        }
-                                    </Table.Body>
+                                            })                                        }                                    </Table.Body>
                                 </Table>
                             </div>
                             <ReactPaginate
@@ -168,4 +165,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Dialogue)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Dialogue))
