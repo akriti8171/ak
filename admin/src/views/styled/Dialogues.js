@@ -56,4 +56,16 @@ export const DialoguesStyle = styled.div`
     top:8px;
     background-color:#00db08;
 }
+
+.product-details{
+    //  border:1px solid red;
+    box-shadow: 0 0 2px #f6f6f6;
+    height:75vh;
+    width:93vw;
+    background-color:#fcfcfc;
+
+}
+.cell-forming{
+    color:#111111;
+
 `;
